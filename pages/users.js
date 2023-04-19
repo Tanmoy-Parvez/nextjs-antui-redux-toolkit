@@ -3,7 +3,7 @@ import React from 'react';
 
 const Users = () => {
     return (
-        <div style={{ "minHeight": "100vh" }}>
+        <div>
             <h1>This is users page</h1>
         </div>
     );

@@ -1,3 +1,4 @@
+import DashboardLayout from " @/components/Layouts/DashboardLayout";
 
 const DashboardHomePage = () => {
     return (
@@ -8,3 +9,8 @@ const DashboardHomePage = () => {
 };
 
 export default DashboardHomePage;
+
+DashboardHomePage.getLayout = function getLayout(page) {
+
+    return <DashboardLayout>{page}</DashboardLayout>
+}

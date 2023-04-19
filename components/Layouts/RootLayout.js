@@ -1,7 +1,7 @@
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import {
     HomeOutlined,
-    UploadOutlined,
+    LayoutOutlined,
     UserOutlined,
     VideoCameraOutlined,
 } from '@ant-design/icons';
@@ -35,11 +35,11 @@ const RootLayout = ({ children }) => {
                     <Menu.Item key="1" icon={<HomeOutlined />}>
                         <Link href="/">Home</Link>
                     </Menu.Item>
-                    <Menu.Item key="2" icon={<UploadOutlined />}>
-                        Upload
-                    </Menu.Item>
-                    <Menu.Item key="3" icon={<UserOutlined />}>
+                    <Menu.Item key="2" icon={<UserOutlined />}>
                         <Link href="/users">Users</Link>
+                    </Menu.Item>
+                    <Menu.Item key="3" icon={<LayoutOutlined />}>
+                        <Link href="/dashboard">Dashboard</Link>
                     </Menu.Item>
                     <Menu.Item key="4" icon={<VideoCameraOutlined />}>
                         Video
@@ -63,7 +63,7 @@ const RootLayout = ({ children }) => {
                 <div
                     style={{
                         padding: 24,
-                        minHeight: 380,
+                        minHeight: "100vh",
                         background: colorBgContainer,
                     }}
                 >
