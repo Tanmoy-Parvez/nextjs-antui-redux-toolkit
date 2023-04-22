@@ -52,14 +52,6 @@ const RootLayout = ({ children }) => {
                     padding: '0 50px',
                 }}
             >
-                <Breadcrumb
-                    style={{
-                        margin: '16px 0',
-                    }}
-                >
-                    <Breadcrumb.Item>Home</Breadcrumb.Item>
-
-                </Breadcrumb>
                 <div
                     style={{
                         padding: 24,
