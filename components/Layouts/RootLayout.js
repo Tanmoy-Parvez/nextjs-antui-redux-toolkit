@@ -1,4 +1,4 @@
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import { Layout, Menu, theme } from 'antd';
 import {
     HomeOutlined,
     LayoutOutlined,
@@ -7,11 +7,14 @@ import {
 } from '@ant-design/icons';
 import Link from 'next/link';
 
+
 const { Header, Content, Footer } = Layout;
+
 const RootLayout = ({ children }) => {
     const {
         token: { colorBgContainer },
     } = theme.useToken();
+
     return (
         <Layout>
             <Header

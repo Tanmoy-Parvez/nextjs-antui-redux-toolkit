@@ -1,13 +1,24 @@
 import RootLayout from " @/components/Layouts/RootLayout";
 import Products from " @/components/UI/Products";
+import { useCart } from " @/context/ContextProvider";
+import { ShoppingCartOutlined } from "@ant-design/icons";
+import { Avatar, Badge } from "antd";
 
 
 const HomePage = ({ products }) => {
-
-  console.log(products);
+  const { cart, setCart } = useCart();
+  console.log("From Home Page", cart);
+  // console.log(products);
 
   return (
     <div>
+      <Badge count={cart ? cart.length : 0}>
+        <Avatar shape="square" size="large">
+          <ShoppingCartOutlined />
+        </Avatar>
+
+      </Badge>
+
       <Products products={products} />
     </div>
   );
